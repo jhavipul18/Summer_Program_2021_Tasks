@@ -1,0 +1,119 @@
+body
+{
+    background-image: url(https://dytvr9ot2sszz.cloudfront.net/wp-content/uploads/2020/09/1200x628_kubernetes.jpg);
+    background-repeat:no-repeat;
+   background-size: cover;
+   margin: 0;
+   padding: 0;
+}
+
+h3
+{
+    text-align: center;
+    margin-top: 0.5%;
+    padding:1%;
+    color:rgb(75, 67, 67);
+    font-size:20px;
+    background-color:white;
+    box-shadow: 2px 3px 3px gainsboro;
+    opacity: 0.8;
+    user-select: none;
+}
+
+.input_area
+{
+    padding:0.5%;
+    width:20%;
+    margin-right: 1%;
+    border-radius: 4px;
+    font-size:20px;
+    
+}
+
+.submit
+{
+    width:7%;
+    color:white;
+    font-size:20px;
+    background-color: rgba(31, 144, 196, 0.767);
+    border-radius: 5px;
+   border:1px solid white;
+}
+
+.input_portion
+{
+    display:flex;
+    justify-content:center;
+   padding-top:1%;
+}
+
+.submit:hover
+{
+    border:1px solid black;
+}
+
+.container
+{
+    display:flex;
+    justify-content:center;
+}
+
+span
+{
+    padding-top:0.5%;
+    margin-right: 0.5%;
+}
+
+pre
+{
+    display:flex;
+    justify-content:center;
+}
+
+.output
+{
+    font-size:15px;
+    text-align:center;
+    width:1050px;
+    height:250px;
+    background-color:white;
+    color:black;
+    opacity: 0.7;
+    border-radius: 7px;
+    border:1px solid rgba(0, 0, 0, 0.719);
+}
+
+.long_h
+{
+    display:flex;
+    justify-content:center;
+}
+
+.long_h>h4
+{
+    margin-top: 3%;
+    font-size:25px;
+    color:rgb(255, 255, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    letter-spacing: 1px;
+}
+
+#cloud {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    content: '';
+    opacity: 1;
+    position: relative;
+    top: 50px;
+    color:antiquewhite;
+    animation: float 3.5s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+      50% {
+          top: 60px;
+      }    
+      100% { 
+          top: 50px;
+      }
+  }

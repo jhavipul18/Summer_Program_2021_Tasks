@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Kubernetes Tutorial</title>
+</head>
+<body>
+
+   
+    <main>
+        <div class="main-message">
+            <div class="container">
+                <div id="cloud">Kubernetes</div>
+            </div>
+            <div class="long_h">
+                <h4>Running kubernetes on Web browser</h4>
+            </div>
+            <br>
+            <h3>
+                <div class="input_portion">
+                    <span>[root@localhost ~]# </span>
+                    <input class="input_area" id="inp" placeholder="Enter the command">
+                    <button onclick="lw();"  class="submit">Submit</button>
+                </div>
+            </h3>
+             <pre>
+            <div  id="d1" class="output">Output will be displayed here.</div>
+            </pre>
+           
+    
+        </div>
+    </main>
+
+    <script type="text/javascript" src="https://leaverou.github.io/prefixfree/prefixfree.min.js"></script>
+    <script>
+        function lw(){
+                var i = document.getElementById("inp").value
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "http://192.168.68.130/cgi-bin/k8s.py?x="+i,true)
+                xhr.send();
+    
+                // output
+                xhr.onload = function() {
+                var output = xhr.responseText;
+                document.getElementById("d1").innerHTML = output;
+                }
+        }
+    
+    </script>
+
+</body>
+</html>
+
